@@ -406,11 +406,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 https://developer.mozilla.org/en-US/docs/Web/API/Response/json
 
 #### 7 Bilagor
-
+![Figur 6](https://raw.githubusercontent.com/tim877/examensrapport/9413b692a3354b45fd8a93242d636e9d59897924/6.png)
 Jag kopplar posts till users för att få författarnamn och LEFT `JOIN` mot comments för att kunna räkna hur många kommentarer varje inlägg har. `GROUP BY` används för att slå ihop kommentarerna per post.
-
+![Figur 5](https://raw.githubusercontent.com/tim877/examensrapport/9413b692a3354b45fd8a93242d636e9d59897924/5.png)
 Här gör jag en enkel `SELECT` mot en färdig, platt tabell. Det finns inga `JOIN`s eller beräkningar vid läsning - all data är redan förberedd, vilket gör frågan snabbare.
 
 Här skapar jag en MySQL connection pool.
-
 Pooling gör att anslutningar återanvänds istället för att skapas på nytt för varje request, vilket ger bättre prestanda och stabilare beteende vid många samtidiga anrop.
+![Figur 4](https://raw.githubusercontent.com/tim877/examensrapport/9413b692a3354b45fd8a93242d636e9d59897924/4.png)
