@@ -360,9 +360,11 @@ I praktiken innebär detta att datamodellen bör väljas utifrån hur systemet f
 MYSQL 8.4 (officiella manualen)
 
 -MySQL 8.4 Reference Manual (start/översikt) 
+
 https://dev.mysql.com/doc/refman/8.4/en/
 
 `SELECT`-statement (grundsyntax + hur `SELECT` hänger ihop med `JOIN`) 
+
 https://dev.mysql.com/doc/en/select.html
 
 `JOIN` Clause (`JOIN`-syntax)
@@ -370,34 +372,46 @@ https://dev.mysql.com/doc/en/select.html
 https://dev.mysql.com/doc/en/join.html
 
 Aggregate functions (`COUNT`, m.fl.) + koppling till `GROUP BY` 
+
 https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions-and-modifiers.html
 
 (och tabellen med aggregate functions) 
+
 https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html
 
 `EXPLAIN` + `EXPLAIN ANALYZE` (hur MySQL visar query plan och faktisk körning)
+
 https://dev.mysql.com/doc/en/explain.html
+
 (för output-format)
+
 https://dev.mysql.com/doc/en/explain-output.html
 
 React - Official Documentation.
+
 https://react.dev
 
 
 MÄTNING / TIMERS (officiella källor)
+
 - Node.js `perf_hooks` / Performance APIs (performance.now i Node via `perf_hooks`)
+  
 https://nodejs.org/api/`perf_hooks`.html
 
 - MDN: `performance.now()` (high resolution timestamp i webbläsaren)
+
 https://developer.mozilla.org/en-US/docs/Web/API/Performance/now
 
 - MDN: `requestAnimationFrame`() (callback före nästa repaint - bra för att få "visuell" render-mätning)
+  
 https://developer.mozilla.org/en-US/docs/Web/API/Window/`requestAnimationFrame`
 
 - MDN: Fetch API (anrop + respons-hantering)
+
 https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 - MDN: Response.json() (att .json() läser streamen och parsar JSON)
+
 https://developer.mozilla.org/en-US/docs/Web/API/Response/json
 
 #### 7 Bilagor
