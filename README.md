@@ -21,6 +21,36 @@ Results show that data modeling decisions are a dominant factor in overall laten
 Keywords: MySQL, normalization, denormalization, performance, React, user experience
 
 ### Lista över förkortningar och begrepp
+| Begrepp / förkortning | Typ | Förklaring |
+|----------------------|-----|------------|
+| Backend | Arkitektur | Serversidan av applikationen som hanterar logik, databasanrop och API-svar. |
+| Frontend | Arkitektur | Klientsidan av applikationen där användargränssnittet renderas och interaktion sker. |
+| API | Teknikbegrepp | Application Programming Interface – ett programmeringsgränssnitt för kommunikation mellan system. |
+| DB | Förkortning | Databas. |
+| UX | Designbegrepp | User Experience – användarupplevelse. |
+| Normalisering | Databasdesign | Databasdesignprincip för att minska redundans och säkerställa dataintegritet. |
+| Denormalisering | Databasdesign | Medveten introduktion av redundans för att optimera läsprestanda. |
+| JOIN | SQL | SQL-operation som används för att kombinera data från flera tabeller. |
+| GROUP BY | SQL | SQL-klausul som används för att gruppera rader vid aggregeringar. |
+| Read-projection | Databasdesign | En datamodell där data lagras i presentationsfärdig form för snabba läsningar. |
+| CQRS | Arkitekturmönster | Command Query Responsibility Segregation – separerar läs- och skrivmodeller. |
+| p95 | Statistikmått | 95:e percentilen – ett mått på den långsammaste realistiska svarstiden (worst-case 5 %). |
+| performance.now() | Mätmetod | Högupplöst timer i Node.js (via perf_hooks) och webbläsare för prestandamätning. |
+| End-to-end-tid | Prestandamått | Den totala tid användaren upplever från request till färdigrenderad vy. |
+| Read-heavy | Systemegenskap | System eller vyer där läsoperationer dominerar över skrivoperationer. |
+| Write-heavy | Systemegenskap | System där skriv- och uppdateringsoperationer sker frekvent och är den dominerande belastningen. |
+| Feed / feed-vy | UI-/applikationsbegrepp | En listbaserad vy som visar många poster i följd, ofta med aggregerad information. |
+| Aggregation / aggregering | SQL-begrepp | Sammanräkning eller sammanställning av data, exempelvis med COUNT, SUM eller GROUP BY. |
+| Runtime-aggregering | Prestandabegrepp | Aggregering som sker vid varje request i stället för att vara förberäknad. |
+| Flat table / flat projection | Databasdesign | En platt tabell där data redan är aggregerad och presentationsfärdig. |
+| Warm run | Mätmetod | Prestandatest som körs när systemet redan är igång och cache är uppvärmd. |
+| Cold start | Prestandabegrepp | Den initiala uppstartstiden för ett system innan cache, processer och anslutningar är etablerade. |
+| Steady-state | Prestandabegrepp | Ett stabilt tillstånd där systemet körs kontinuerligt utan uppstartseffekter. |
+| Flaskhals | Prestandabegrepp | Den del av systemet som begränsar den totala prestandan mest. |
+| End-to-end | Prestandabegrepp | Hela kedjan från användarinteraktion till färdigrenderat gränssnitt. |
+| JSON-parsning | Backend / frontend | Processen där JSON-data tolkas och omvandlas till objekt i JavaScript. |
+| Request / Response | Webbkommunikation | En request är ett anrop från klient till server, och response är serverns svar. |
+| Latency | Nätverk / prestanda | Fördröjning i dataöverföring mellan klient och server. |
 
 ### 1. Inledning
 
