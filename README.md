@@ -132,6 +132,9 @@ Den denormaliserade modellen använder i stället en read-projection i form av e
 
 Det är viktigt att understryka att det som visas i frontend är exakt samma vy i båda fallen. Skillnaden ligger uteslutande i hur mycket arbete databasen behöver utföra för att leverera denna vy.
 
+![Figur 7](https://raw.githubusercontent.com/tim877/examensrapport/974e17e0fa781cedd37a8510a3b5de201f5fc265/7.png)
+
+
 #### 3.3 Dataset
 
 Datasetet är konstruerat för att tydliggöra skillnaden mellan modellerna och består av:
