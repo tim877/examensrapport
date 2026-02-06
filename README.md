@@ -52,6 +52,50 @@ Keywords: MySQL, normalization, denormalization, performance, React, user experi
 | Request / Response | Webbkommunikation | En request är ett anrop från klient till server, och response är serverns svar. |
 | Latency | Nätverk / prestanda | Fördröjning i dataöverföring mellan klient och server. |
 
+## Innehållsförteckning
+
+- [Datamodellering i MySQL och dess påverkan på prestanda och användarupplevelse i en React-applikation](#datamodellering-i-mysql-och-dess-påverkan-på-prestanda-och-användarupplevelse-i-en-react-applikation)
+- [Abstract](#abstract)
+- [Lista över förkortningar och begrepp](#lista-över-förkortningar-och-begrepp)
+
+- [1. Inledning](#1-inledning)
+  - [1.1 Bakgrund och problemformulering](#11-bakgrund-och-problemformulering)
+  - [1.2 Relevans för frontendutveckling](#12-relevans-för-frontendutveckling)
+  - [1.3 Syfte och forskningsfrågor](#13-syfte-och-forskningsfrågor)
+  - [1.4 Avgränsningar](#14-avgränsningar)
+
+- [2. Teoretisk grund](#2-teoretisk-grund)
+  - [2.1 Normalisering och normalformer](#21-normalisering-och-normalformer)
+  - [2.2 Denormalisering, read-projections och CQRS-inspirerat tänk](#22-denormalisering-read-projections-och-cqrs-inspirerat-tänk)
+  - [2.3 Databasprestanda, JOINs och aggregeringar](#23-databasprestanda-joins-och-aggregeringar)
+  - [2.4 Prestanda och användarupplevelse](#24-prestanda-och-användarupplevelse)
+
+- [3. Metod och genomförande](#3-metod-och-genomförande)
+  - [3.1 Övergripande upplägg](#31-övergripande-upplägg)
+  - [3.2 Datamodeller](#32-datamodeller)
+  - [3.3 Dataset](#33-dataset)
+  - [3.4 Mätstrategi](#34-mätstrategi)
+  - [Testmiljö](#testmiljö)
+  - [3.5 Statistik och körsätt](#35-statistik-och-körsätt)
+  - [3.6 Förklaring av mätpunkter och hur de mäts](#36-förklaring-av-mätpunkter-och-hur-de-mäts)
+
+- [4. Resultat](#4-resultat)
+  - [4.1 Normaliserad datamodell – sammanställning](#41-normaliserad-datamodell--sammanställning)
+  - [4.2 Denormaliserad datamodell – sammanställning](#42-denormaliserad-datamodell--sammanställning)
+  - [4.3 Jämförande översikt](#43-jämförande-översikt)
+
+- [5. Diskussion](#5-diskussion)
+  - [5.1 Tolkning av resultat](#51-tolkning-av-resultat)
+  - [5.2 Varför frontend inte är problemet](#52-varför-frontend-inte-är-problemet)
+  - [5.3 Trade-offs](#53-trade-offs)
+  - [5.4 Begränsningar i studien](#54-begränsningar-i-studien)
+  - [5.5 Metareflektion – lärdomar från arbetet](#55-metareflektion--lärdomar-från-arbetet)
+  - [5.6 Slutsats](#56-slutsats)
+
+- [6. Referenslista](#6-referenslista)
+- [7. Bilagor](#7-bilagor)
+
+
 ### 1. Inledning
 
 #### 1.1 Bakgrund och problemformulering
