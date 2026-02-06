@@ -117,7 +117,7 @@ Versionshantering har även spelat en viktig roll i samband med prestandamätnin
 För att kunna isolera effekten av datamodellering byggdes en enkel och kontrollerad prototyp bestående av tre tydliga lager: databas, backend och frontend. Arkitekturen bygger på en enkel och välkänd uppdelning mellan dessa lager, vilket gör att resultaten är lätta att överföra till verkliga webbapplikationer.
 
 Frontend är utvecklad i React och presenterar en feed-vy bestående av ett större antal poster. Backend är implementerad i Node.js med Express och exponerar två separata API-endpoints, en per datamodell. Databasen utgörs av MySQL och innehåller samma underliggande dataset i båda fallen.
-![Image Alt]([image_url](https://github.com/tim877/examensrapport/blob/629aa0cd9be87d05c49f63a1e1d7b460b525ddce/1.png)
+![Normaliserad SQL-fråga](https://raw.githubusercontent.com/tim877/examensrapport/629aa0cd9be87d05c49f63a1e1d7b460b525ddce/1.png)
 Bilden som visas är hämtad från tidigare tester, men används för att illustrera hur vyerna ser ut i applikationen.
 
 Det viktigaste metodvalet är att frontend-koden är exakt samma oavsett datamodell. Den enda skillnaden i systemet är vilken endpoint som anropas. På så sätt kan skillnader i uppmätt prestanda kopplas direkt till datamodelleringen och inte till frontend- eller backend-logik.
