@@ -415,5 +415,6 @@ Jag kopplar posts till users för att få författarnamn och LEFT `JOIN` mot com
 Här gör jag en enkel `SELECT` mot en färdig, platt tabell. Det finns inga `JOIN`s eller beräkningar vid läsning - all data är redan förberedd, vilket gör frågan snabbare.
 
 ![Figur 4](https://raw.githubusercontent.com/tim877/examensrapport/9413b692a3354b45fd8a93242d636e9d59897924/4.png)
+
 Här skapar jag en MySQL connection pool.
 Pooling gör att anslutningar återanvänds istället för att skapas på nytt för varje request, vilket ger bättre prestanda och stabilare beteende vid många samtidiga anrop.
