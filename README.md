@@ -155,6 +155,8 @@ För att förstå var begränsningarna i systemet faktiskt uppstår delas mätni
 
 I backend startas en timer precis innan SQL-frågan skickas till MySQL och stoppas när databasen har returnerat sitt resultat. Därefter startas en ny mätning för JSON-serialisering, som avslutas när svaret är färdigbyggt. Dessa mätningar ger en tydlig uppdelning mellan databaskostnad och backend-bearbetning.
 
+![Figur 3](https://raw.githubusercontent.com/tim877/examensrapport/68bb4700301d98ca04512e2b63bdf76f528c38c7/3.png)
+
 I frontend används samma princip, där en timer startas precis innan `fetch()` anropas och stoppas först när JSON-svaret har mottagits och parsats av webbläsaren. Rendering mäts separat genom att kombinera state-uppdatering med `requestAnimationFrame` för att säkerställa att mätningen inkluderar faktisk visuell uppdatering.Genom att använda samma typ av högupplösta timers i både backend och frontend säkerställs att mätningarna är jämförbara och att små skillnader inte försvinner i avrundningsfel.
 
 #### Testmiljö
