@@ -145,6 +145,8 @@ Datasetet är konstruerat för att tydliggöra skillnaden mellan modellerna och 
 
 4 291 650 kommentarer
 
+![Figur 2](https://raw.githubusercontent.com/tim877/examensrapport/ae5e437b22eda3cbdbea012a4a01dde91fb719f8/2.png)
+
 Den stora mängden kommentarer är ett medvetet val för att göra aggregering kostsam i den normaliserade modellen. På så sätt blir kontrasten mellan att räkna data vid varje request och att läsa färdig data tydlig.
 
 #### 3.4 Mätstrategi
