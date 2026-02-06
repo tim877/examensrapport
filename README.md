@@ -6,8 +6,6 @@ Hybridprojekt - utveckling och teknisk analys
 Tim Hagman - 2026
 ---
 
-## Datamodellering i MySQL och dess påverkan på prestanda och användarupplevelse i en React‐applikation
-
 Hybridprojekt - utveckling och teknisk analys
 
 Tim Hagman - 2026
